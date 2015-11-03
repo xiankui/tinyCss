@@ -1,0 +1,38 @@
+/*  reset */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, li, dl, dt, dd, form, fieldset, legend, input, textarea, button, th, td{
+	margin:0;
+	padding:0;
+	font:inherit;
+}
+table{
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+ul, ol{
+	list-style: none;
+}
+img{
+	border:0;
+}
+b, strong{
+	font-weight: 700;
+}
+
+
+article, main, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary{
+	display: block;
+}
+
+audio, canvas, progress, video{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+
+/*  base for all page */
+body{
+	font:100%/1 Verdana,Tahoma,Helvetica,Arial,sans-serif;	
+	min-width: 320px;
+	background-color: #ffeedd;
+	color:#4c4c4c;
+}

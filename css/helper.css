@@ -1,0 +1,41 @@
+/*  ie6 兼容模式  */
+
+/*  透明边框  =》 ie6, ie7, ie8  padding透明而不会影响content    */
+.rgbaOpacity {
+	padding:15px;
+	background-color: rgba(0, 0, 0, 0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
+}
+
+/* 整个元素透明 */
+.filterOpacity {
+	background-color:#000;
+	opacity:0.2;
+	*filter:alpha(opacity=20);
+	*zoom:1;
+}
+
+/*  ie6  */
+.pngOpacity {
+	background:url(http://j5.dfcfw.com/image/201405/20140519174039.png) center center no-repeat;
+
+	_background: none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true' , sizingMethod='crop' , src='http://j5.dfcfw.com/image/201405/20140519174039.png');
+}
+
+/*  ie6  */
+.fixedTop {
+	position:fixed;
+	top:0;
+
+	_position:absolute;
+	_top:expression(eval(document.documentElement.scrollTop))
+}
+
+.fixedBottom {
+	_position:absolute;
+	_top:expression(eval(document.documentElement.scrollTop + document.documentElement.clientHeight - 60));
+}
+
+/*  ie ff 去掉虚线框 */
+a{blr:expression(this.onFocus=this.blur());outline:none}
